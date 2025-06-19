@@ -12,7 +12,7 @@ class EqualOrNot
       {
         System.out.println("both numbers are equal");
       }
-      else
+       if(num1!=num2)
       {
         System.out.println("both numbers are different");
       }
