@@ -312,4 +312,390 @@ enter a number:
 
 */
 
----------------------------------------------------------------
+-------------------------------------------------------------
+ /*
+
+import java.util.Scanner;
+class India
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a String:");
+String n=sc.next();
+for( int i=0;i<n.length();i++)
+{
+for(int j=0;j<=i;j++)
+{
+ System.out.print(n.charAt(j));
+}
+System.out.println();
+}
+}
+} 
+
+Output:
+ enter a String:
+INDIA
+I
+IN
+IND
+INDI
+INDIA
+
+*/
+
+--------------------------------------------------------------
+
+/*
+class Pattern11
+{
+public static void main(String[]args)
+{
+for(int i=1;i<=5;i++)
+{
+for(int j=1;j<(6-i);j++)
+{
+System.out.print(" ");
+}
+for(int k=1;k<(i*2);k++)
+{
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}
+
+Output:
+    *
+   ***
+  *****
+ *******
+*********
+
+*/
+
+-----------------------------------------------------------
+
+/*
+
+
+class Pattern12
+{
+public static void main(String[]args)
+{
+int p=1;
+for(int i=1;i<=7;i++)
+{
+if(p<=4)
+{
+for(int j=1;j<(5-i);j++)
+{
+System.out.print(" ");
+}
+for(int k=1;k<(i*2);k++)
+{
+System.out.print("*");
+}
+p++;
+}
+else
+{
+for(int j=1;j<(i-3);j++)
+{
+System.out.print(" ");
+}
+for(int k=(2*(7-i)+1) ;k>0;k--)
+{
+System.out.print("*");
+}
+p++;
+}
+System.out.println();
+}
+}
+}
+
+Output:
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+*/
+-----------------------------------------------------------------
+ //Pattern-13         
+  /*class Patterns
+ {
+ public static void main(String[] args)
+ {
+   int n = 4;
+for (int i = 0; i < n; i++)
+ {
+    for (int j = 0; j < n - i - 1; j++)
+     System.out.print(" ");
+    System.out.print("*");
+     if (i != 0) 
+{
+    for (int j = 0; j < 2 * i - 1; j++)
+   System.out.print(" ");
+   System.out.print("*");
+   }
+   System.out.println();
+  }
+for (int i = n - 2; i >= 0; i--) 
+{
+ for (int j = 0; j < n - i - 1; j++)
+   System.out.print(" ");
+   System.out.print("*");
+    if (i != 0)
+ {
+    for (int j = 0; j < 2 * i - 1; j++)
+    System.out.print(" ");
+    System.out.print("*");
+ }
+  System.out.println();
+        }
+    }
+}
+Output:
+   *
+  * *
+ *   *
+*     *
+ *   *
+  * *
+   *   
+   
+ */
+
+--------------------------------------------------------------
+ //Pattern-14                 
+/* class Patterns
+{
+public static void main(String[] args) 
+{
+int n = 5;
+ for (int i = 1; i <= n; i++) 
+{
+for (int j = 1; j <= n; j++) 
+{
+ if (i == 1 || i == n || j == 1 || j == n)
+System.out.print("*  ");
+ else
+ System.out.print("   ");
+}
+System.out.println();
+}
+}
+}
+ Output:
+*  *  *  *  *
+*           *
+*           *
+*           *
+*  *  *  *  *  
+
+
+*/
+ ---------------------------------------------------------------
+
+ //Pattern-15
+/*class Patterns
+{
+public static void main(String[] args)
+ {
+ int n = 7;
+ int mid = n / 2;
+ for (int i = 0; i < n; i++)  
+{
+  for (int j = 0; j < n; j++)
+ {
+  if (i == mid || j == mid)
+ {
+  System.out.print("*");
+  } 
+else
+ {
+ System.out.print(" ");
+ }
+ }
+System.out.println();
+ }
+}
+}
+ Output:
+   *
+   *
+   *
+*******
+   *
+   *
+   *  
+   
+   
+   */
+ ----------------------------------------------------------------------
+  //Pattern-16
+ /*class Patterns
+{
+ public static void main(String[] args)
+{
+ int n = 7;
+ for (int i = 1; i <= n; i++)
+ {
+ for (int j = 1; j <= n; j++)
+{
+ if (j == i || j == n - i + 1)
+System.out.print("*");
+else
+System.out.print(" ");
+}
+System.out.println();
+ }
+}
+}
+Output:
+
+*     *
+ *   *
+  * *
+   *
+  * *
+ *   *
+*     * 
+
+
+*/
+ -----------------------------------------------------------------
+ //Pattern-17
+/*class Patterns 
+{
+public static void main(String[] args)
+ {
+int n = 7;
+for (int i = 1; i <= n; i++)
+ {
+for (int j = 1; j <= n; j++)
+ {
+if (i == 1||i == n||i==(n+1)/2 ||j ==1||j==n||j==(n + 1)/2)
+System.out.print("*  ");
+else
+System.out.print("   ");
+}
+System.out.println();
+}
+}
+}
+Output:
+*  *  *  *  *  *  *
+*        *        *
+*        *        *
+*  *  *  *  *  *  *
+*        *        *
+*        *        *
+*  *  *  *  *  *  *   
+
+*/
+ ---------------------------------------------------------------
+ //Pattern-18
+/*class Patterns
+ {
+ public static void main(String[] args) 
+{
+int n = 7;
+for (int i = n; i >= 1; i--)
+ {
+ for (int j = 1; j <= i; j++) 
+{
+ if (j == 1 || j == i || i == n) 
+{
+System.out.print("*");
+} else {
+System.out.print(" ");
+ }
+}
+System.out.println();
+}
+}
+}       
+Output:
+*******
+*    *
+*   *
+*  *
+* *
+**
+*    
+
+
+*/
+ -----------------------------------------------------
+ //Pattern-19
+/*class Patterns
+{
+public static void main(String[] args)
+ {
+int n = 5;
+for (int i = 0; i <= n; i++)
+ {
+for (int j = 0; j < i; j++)
+System.out.print("*");
+System.out.println(i);
+}
+}
+}
+Output:
+0
+*1
+**2
+***3
+****4
+*****5  
+
+*/
+-----------------------------------------------------------------
+ //Pattern-20
+/* class Patterns 
+{
+ public static void main(String[] args)
+ {
+ int n = 7;
+for (int i = 1; i <= n; i++)
+ {
+for (int j = 1; j <= n; j++)
+{
+if (i == 1)
+ {
+System.out.print("* ");
+}
+else if (j == 1 || j == i) 
+{
+System.out.print("* ");
+}
+else 
+{
+ System.out.print(" ");
+}
+ }
+System.out.println();
+}
+}
+}
+Output:
+
+* * * * * * *
+* *
+*  *
+*   *
+*    *
+*     *
+*      *  
+
+
+*/
+------------------------------------------------------------------------  
